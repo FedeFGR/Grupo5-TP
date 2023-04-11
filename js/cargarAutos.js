@@ -29,7 +29,7 @@ function Filtrar(){
    }
 }
 
-fetch("../BD/Autos.json")
+fetch("./BD/Autos.json")
 .then(response => {return response.json();})
 .then(data =>{
    console.log(data)
