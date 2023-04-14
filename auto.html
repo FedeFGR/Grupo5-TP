@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/card.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
+
+    <title>Document</title>
+</head>
+<body>
+    <div class="AutoContainer" id="AutoContainer">
+        <form onsubmit="return false;" id='seleccion'>
+            <div class="formSub">
+                <h3>Si le interesa adquirir este vehículo, llene estos datos</h3>
+                <label for="nombre2">Nombre</label>
+                <input type="text" id="nombre2" name="nbre2" size="50" placeholder="Escriba aqu&iacute; su nombre..">
+                <label for="email2">E-mail</label>
+                <input type="email" id='email2' name="mail2" size="50" placeholder="Escriba aqu&iacute; su dirección de correo electr&oacute;nico..">
+                <textarea name="area" id="area" cols="30" rows="3" width="100%" resize="none">
+                    Me interesa este vehículo
+                </textarea>
+                <button type="submit" onclick="return Validar2()">Me interesa</button>
+            </div>
+        </form>   
+        <script>
+            const Miauto=JSON.parse(localStorage.getItem("auto"))
+            console.log(Miauto)
+            document.getElementById("AutoContainer").innerHTML+=`
+            <div class="card">
+            <img class="imgcard" src="${Miauto.URL}">
+            <div class="cardescripcion">
+               <h3><b>${Miauto.Marca} ${Miauto.Modelo} ${Miauto.Anio}</b></h3>
+               <p><br>Precio: $${Miauto.Precio}<br>Estado: ${Miauto.Estado}<br>
+                    Descripción: ${Miauto.Descripcion}
+                </p>
+            </div>
+         </div>
+            
+         `
+         document.getElementById("area").value=("Estoy interesado en el vehiculo "+
+         Miauto.Marca+" "+Miauto.Modelo+" "+Miauto.Anio+" "+Miauto.Estado+
+         ", solicito mas información y planes de financiamento, por favor")
+        </script>
+     
+    </div>
+   
+    <script src="./js/cargarAutos.js"></script>
+    <script src="./js/validar.js"></script>
+</body>
+</html>

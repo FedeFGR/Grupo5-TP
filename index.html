@@ -2,7 +2,7 @@
 <html lang="en" dir="ltr">
   <head>
     <meta charset="utf-8">
-    <title>Responsive Navbar</title>
+    <title>Autok</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./css/style.css">
     <link rel="stylesheet" href="./css/card.css">
@@ -10,7 +10,7 @@
   </head>
   <body>
     <header>
-      <label class="logo"><i class="bi bi-x-diamond"></i>Autok</label>
+      <label class="logo"><i class="bi bi-x-diamond"> </i> Autok</label>
       
       
       <nav>
@@ -19,20 +19,28 @@
           <i class="bi bi-list"></i>
         </label>
       <ul>
-        <li><a href="#">Nosotros</a></li>
-        <li><a href="#">Autos</a></li>
-        <li><a href="#">Contactanos</a></li>
-        <li><a href="#">Servicios</a></li>
-        <li><a href="#">Plan Ahorro</a></li>
-        <li><a href="#">Registro</a></li>
+        <li><a href="#Catalogo">Autos</a></li>
+        <li><a href="#Nosotros">Nosotros</a></li>
+        <li><a href="#Contacto">Contactanos</a></li>
+        <li><a href="#Registro">Registro <i class="bi bi-person-circle"></i></a></li>
       </ul>
       </nav>
     </header>
     
     <main>
-      
-      <section class="Catalogo">
-        <h2>Catalogo</h2>
+      <section class="Presentacion" id="Presentacion">
+        <h1 class="title">
+          <span class="title-word title-word-1">¡Los mejores autos de</span>
+          <span class="title-word title-word-2">Agentina!</span>
+        </h1>
+        <!--<div class="caja"></div>
+        <img src="./img/FondoMain.jpg" alt="autos" width="200%">
+        <div class="centered">
+          <h1>¡Los mejores autos de Argentina!</h1>
+        </div>-->
+      </section>
+      <section class="Catalogo" id="Catalogo">
+        <h2>Catálogo</h2>
         <form onsubmit="return false;" id="filtro">
           <div class="formFiltro">
             <label for="marca">Marca</label>
@@ -69,13 +77,12 @@
             
         </div>
       </section>
-
-      <section class="Nosotros">
-        <h2>A cerca de Nosotros</h2>
-      </section>
-
-      <section class="Registro">
-        <h2>Registro</h2>
+      <section class="Registro" id="Registro">
+        <h2>Registro</h2><br>
+        <p>Con solo registrar su Nombre y su Email podrá suscribirse a nuestro boletín semanal de ofertas en
+          es su provincia o distrito, además de otras novedades respecto al negocio de la compra y venta de autos
+          en Argentina, y detalles de las actualizaciones de nuestro sitio.
+        </p>
         <form action="" id='suscripcion'>
           <div class="formSub">
                 <h3>Suscripci&oacute;n</h3>
@@ -86,45 +93,78 @@
           <input type="text" id='apellido' name="ap" size="50" placeholder="Escriba aqu&iacute; su apellido..">
           <label for="email">E-mail</label>
           <input type="email" id='email' name="mail" size="50" placeholder="Escriba aqu&iacute; su dirección de correo electr&oacute;nico..">
-                <label for="distrito">Seleccione su Provincia/Distrito</label>
-                <select name="dist" id='distrito'>
-                    <option value="cba">Ciudad Aut&oacute;noma de Buenos Aires</option>
-                    <option value="buenosaires">Buenos Aires (Provincia)</option>
-                    <option value="catamarca">Catamarca</option>
-                    <option value="chaco">Chaco</option>
-                    <option value="chubut">Chubut</option>
-                    <option value="cordoba">Cordoba</option>
-                    <option value="entrerios">Entre R&iacute;os</option>
-                    <option value="Formosa">Formosa</option>
-                    <option value="Jujuy">Jujuy</option>
-                    <option value="lapampa">La pampa</option>
-                    <option value="larioja">La Rioja</option>
-                    <option value="mendoza">Mendoza</option>
-                    <option value="misiones">Misiones</option>
-                    <option value="neuquen">Neuqu&eacute;n</option>
-                    <option value="rionegro">R&iacute;o Negro</option>
-                    <option value="salta">R&iacute;o Negro</option>
-                    <option value="sanjuan">San Juan</option>
-                    <option value="sanluis">San Luis</option>
-                    <option value="santacruz">Santa Cruz</option>
-                    <option value="santafe">Santa F&eacute;</option>
-                    <option value="santiago">Santiago del Estero</option>
-                    <option value="tierradelfuego">Tierra del Fuego</option>
-                    <option value="tucuman">Tucum&aacute;n</option>
+              <label for="distrito">Seleccione su Provincia/Distrito</label>
+              <select name="dist" id='distrito' style="width: 100%;">
+                  <option value="cba">Ciudad Aut&oacute;noma de Buenos Aires</option>
+                  <option value="buenosaires">Buenos Aires (Provincia)</option>
+                  <option value="catamarca">Catamarca</option>
+                  <option value="chaco">Chaco</option>
+                  <option value="chubut">Chubut</option>
+                  <option value="cordoba">Cordoba</option>
+                  <option value="entrerios">Entre R&iacute;os</option>
+                  <option value="Formosa">Formosa</option>
+                  <option value="Jujuy">Jujuy</option>
+                  <option value="lapampa">La pampa</option>
+                  <option value="larioja">La Rioja</option>
+                  <option value="mendoza">Mendoza</option>
+                  <option value="misiones">Misiones</option>
+                  <option value="neuquen">Neuqu&eacute;n</option>
+                  <option value="rionegro">R&iacute;o Negro</option>
+                  <option value="salta">R&iacute;o Negro</option>
+                  <option value="sanjuan">San Juan</option>
+                  <option value="sanluis">San Luis</option>
+                  <option value="santacruz">Santa Cruz</option>
+                  <option value="santafe">Santa F&eacute;</option>
+                  <option value="santiago">Santiago del Estero</option>
+                  <option value="tierradelfuego">Tierra del Fuego</option>
+                  <option value="tucuman">Tucum&aacute;n</option>
                 </select>
                 <button type="submit" onclick="return Validar()">Suscribirse</button>
                 </div>
         </form>
 
       </section>
+      <section class="Nosotros" id="Nosotros">
+        <h2>A cerca de Nosotros</h2><br>
+        <p>Concesionario oficial de la marca Autok desde el año 2009, formando parte de un grupo familiar de empresas del rubro automotor, 
+          con más de 40 años de experiencia en el mercado. Con cinco sucursales, en la Ciudad de Buenos Aires, Quilmes, Berazategui y 
+          próximamente una más en la localidad de San Martín, contamos con el más amplio stock de unidades 0km y semi nuevos, disponibles para la venta. 
+          Nuestra misión es ofrecer a nuestros clientes, con la última tecnología, la mayor variedad de servicios relacionados con la venta 
+          y la post venta de automóviles de marca, procurando brindar con profesionalismo, una atención de excelencia que satisfaga las necesidades 
+          y expectativas de nuestros clientes, con el objetivo de construir una relación sostenible en el tiempo.
+          Nos dedicamos a todos los canales de venta de vehículos, planes de ahorro y venta corporativa, con la mayor oferta de financiación del mercado 
+          que se adecue a las necesidades del cliente.
+          Contamos con más de 6.000 m2 de áreas dedicadas a la atención de servicios de post venta y repuestos y la certificación de la norma ISO 9001 2015, 
+          que nos asegura contar con todos los procesos necesarios para la gestión de la calidad en la atención y satisfacción de los clientes.
+          En esta época ofrecemos una nueva y más segura experiencia. Descubrí tu próximo 0km. De una nueva manera. 
+          </p>
+      </section>
+      <section class="Contacto" id="Contacto">
+        <h2>Contacto</h2><br>
+        <p>¿Tienes alguna pregunta o comentario? Por favor, completa el siguiente formulario y te responderemos lo antes posible.</p><br>
+        <form action="" id="formCont">
+          <label for="nombre3">Nombre:</label>
+          <input type="text" id="nombre3" name="nombre3" required>
+          <label for="email3">Correo Electrónico:</label>
+          <input type="email" id="email3" name="email3" required>
+          <label for="message">Mensaje:</label>
+          <textarea name="message" id="message" value="" required></textarea>
+          <button type="submit" onclick="return Validar3()">Enviar</button>
+        </form>
+      </section>
     </main>
     <footer>
-      <h2>Contactanos</h2>
+      
       <div class="social-icons">
-        <a href="#"><i class="bi bi-facebook"></i></a>
-        <a href="#"><i class="bi bi-instagram"></i></a>
-        <a href="#"><i class="bi bi-whatsapp"></i> 2613456789</a>
+        <h2>Encuéntranos también en: </h2>
+        <div>
+        <a href="https://www.facebook.com/autok/?locale=es"> <i class="bi bi-facebook"></i></a>
+        <a href="https://www.instagram.com/autok/?hl=es"> <i class="bi bi-instagram"></i></a>
+        <a href="https://twitter.com/autok/?lang=es"> <i class="bi bi-twitter"></i></a>
+        <a href="#"><i class="bi bi-whatsapp"> </i> 2613456789</a>
+        </div>
       </div>
+      <p><br>© 2023 Concesionaria Autok. Todos los derechos reservados.</p>
     </footer>
     <script src="./js/cargarAutos.js"></script>
     <script src="./js/validar.js"></script>
