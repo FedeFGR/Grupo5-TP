@@ -6,7 +6,7 @@
         "Color": "Negro",
         "Estado": "Usado",
         "Precio": 2500000.00,
-        "Descripcion": "Alguna descripcion... ",
+        "Descripcion": "Fiat Mobi modelo 2010 Usado. Excelente estado",
         "URL": "./img/Autos/FiatMobi2010.jpg"
     },
     {
@@ -16,7 +16,7 @@
         "Color": "Gris",
         "Estado": "Nuevo",
         "Precio": 4500000.00,
-        "Descripcion": "Alguna descripcion... ",
+        "Descripcion": "Fiat Cronos Nuevo ",
         "URL": "./img/Autos/FiatCronos2022.jpg"
     },
     {
@@ -26,7 +26,7 @@
         "Color": "Rojo",
         "Estado": "Nuevo",
         "Precio": 5600000.00,
-        "Descripcion": "Alguna descripcion... ",
+        "Descripcion": "Peugeot 2008 modelo 2021 Nuevo",
         "URL": "./img/Autos/Peugeot2008-2021.jpg"
     },
     {
@@ -36,7 +36,7 @@
         "Color": "Negro",
         "Estado": "Nuevo",
         "Precio": 6200000.00,
-        "Descripcion": "Alguna descripcion... ",
+        "Descripcion": "Toyota Corolla Nuevo",
         "URL": "./img/Autos/ToyotaCorolla2022.jpg"
     },
     {
@@ -46,7 +46,7 @@
         "Color": "Azul",
         "Estado": "Nuevo",
         "Precio": 5200000.00,
-        "Descripcion": "Alguna descripcion... ",
+        "Descripcion": "Chevrolet Onix Nuevo",
         "URL": "./img/Autos/ChevroletOnix2021.jpg"
     },
     {
@@ -56,7 +56,7 @@
         "Color": "Blanco",
         "Estado": "Nuevo",
         "Precio": 5575000.00,
-        "Descripcion": "Alguna descripcion... ",
+        "Descripcion": "Citroen Berlingo Furgon Nuevo",
         "URL": "./img/Autos/CitroenBerlingoFurgon2020.jpg"
     },
     {
@@ -66,7 +66,7 @@
         "Color": "Naranja",
         "Estado": "Nuevo",
         "Precio": 4050000.00,
-        "Descripcion": "Alguna descripcion... ",
+        "Descripcion": "Citroen C3 Nuevo",
         "URL": "./img/Autos/CitroenC32022.jpg"
     },
     {
@@ -76,7 +76,7 @@
         "Color": "Celeste",
         "Estado": "Nuevo",
         "Precio": 6350000.00,
-        "Descripcion": "Alguna descripcion... ",
+        "Descripcion": "Ford Fiesta Nuevo",
         "URL": "./img/Autos/FordFiesta2021.jpg"
     },
     {
@@ -86,7 +86,7 @@
         "Color": "Azul",
         "Estado": "Nuevo",
         "Precio": 4785000.00,
-        "Descripcion": "Alguna descripcion... ",
+        "Descripcion": "Renault Sandero modelo 2020 Nuevo",
         "URL": "./img/Autos/RenaultSandero2020.jpg"
     },
     {
@@ -96,7 +96,7 @@
         "Color": "Rojo",
         "Estado": "Nuevo",
         "Precio": 6465000.00,
-        "Descripcion": "Alguna descripcion... ",
+        "Descripcion": "Renaul Kangoo modelo 2021 Nuevo",
         "URL": "./img/Autos/RenaultKangoo-2021.jpg"
     }
     ]
